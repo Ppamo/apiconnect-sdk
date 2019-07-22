@@ -11,6 +11,6 @@ RUN apk update && apk upgrade && \
 	apk add curl alpine-sdk python
 RUN npm config -g set strict-ssl false && \
 	npm config set user root && \
-	npm install -g apiconnect@4
+	npm install -g apiconnect@4.0.29
 
 CMD ["apic", "edit", "--accept-license"]
